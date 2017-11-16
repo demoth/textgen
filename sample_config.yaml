@@ -1,0 +1,15 @@
+categories:
+    pronouns: [我, 你, 他, 她]
+    nouns: [猫, 狗, 牛, 羊]
+    professions: [老师, 医生, 记者]
+    adjectives: [好, 小, 大, 美]
+
+
+rules:
+    - [pronouns, nouns, 很, adjectives, 。]
+    - [pronouns, 很, adjectives, 。]
+    - [nouns, 很, adjectives, 。]
+    - [nouns, 很, adjectives, 马？]
+    - [pronouns, 是, professions, 。]
+    - [pronouns, 要, nouns, 。]
+    - [pronouns, 要, nouns, 马？]

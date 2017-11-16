@@ -29,7 +29,6 @@ fun main(args: Array<String>) {
                 else
                     w.write(token)
             }
-            w.write("。")
         }
     }
 }
