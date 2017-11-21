@@ -20,9 +20,10 @@ fun main(args: Array<String>) {
     File(cmd.getOptionValue("o", "result.txt")).writer().use { w ->
         val categories = config["categories"] as Map<String, List<String>>
         val rules = config["rules"] as Map<String, List<String>>
+        val sentences = config["sentences"] as Map<String, List<String>>
         for (i in 0..iterations) {
-            val rule = rules.entries.toList()[rand.nextInt(rules.size)]
-            for (token in rule.value) {
+            val rule = sentences.values.toList()[rand.nextInt(sentences.size)]
+            for (token in rule) {
                 w.write(getWord(token, categories, rules, rand))
             }
         }
