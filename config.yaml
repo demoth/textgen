@@ -21,7 +21,7 @@ categories:
   knowable: [language]
   ending: [ 。, 吗？]
 
-rules:
+sequences:
   teacher: [countries, 老师]
   subject_plural: [subject_single, 和, subject_single]
 
