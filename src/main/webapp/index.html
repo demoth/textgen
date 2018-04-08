@@ -34,8 +34,8 @@
 </nav>
 
 <div class="container-fluid">
-    <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="row flex-xl-nowrap" >
+        <nav class="col-md-2 d-none d-md-block bg-light bd-sidebar">
             <div class="sidebar-sticky">
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                     <span>Categories:</span>
@@ -46,14 +46,16 @@
                 <ul class="nav flex-column" id="category_list"> </ul>
             </div>
         </nav>
-        <div class="container col-md-10">
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+
 
             <h1 class="h2" id="category_name">Select category</h1>
             <div class="form-group">
                 <label for="definition">Definition:</label>
-                <textarea class="form-control" rows="10" id="definition" >Enter chars</textarea>
+                <textarea class="form-control" rows="10" id="definition" ></textarea>
             </div>
-        </div>
+            <button type="button" class="btn btn-primary" onclick="save();">Save</button>
+        </main>
 
     </div>
 </div>

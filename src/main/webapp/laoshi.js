@@ -1,5 +1,7 @@
 
 function onPageLoad () {
+    document.getElementById("definition").value = "Enter chars";
+
     $.get( "/all_categories" + name, function (data, status) {
             console.log("Data: " + data + "\nStatus: " + status);
             var cat_list = document.getElementById("category_list");
@@ -28,4 +30,14 @@ function loadCategory (name) {
             console.log("Data: " + data + "\nStatus: " + status);
         }
     );
+}
+
+function save () {
+    var cat = document.getElementById("category_name").value;
+    var definition = document.getElementById("definition").value;
+    $.post( "/save_category/" + name, definition, function (data, status) {
+
+                console.log("Data: " + data + "\nStatus: " + status);
+            }
+        );
 }
